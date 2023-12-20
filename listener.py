@@ -6,7 +6,7 @@ def main():
 	host_name = socket.gethostname()
 	host_ip = socket.gethostbyname(host_name)
 	print('host ip:', host_ip)
-	port = 9984
+	port = int(input("port:"))
 	socket_address = (host_ip, port)
 
 	#socket bind
