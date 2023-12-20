@@ -3,11 +3,12 @@ from ultralytics import YOLO
 import math
 
 def main():
+
 	model = YOLO("yolov8n-face.pt") #path to model
 
 	client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-	host_ip = '' # insert host ip
-	port = # insert port
+	host_ip = input("Host ip: ")
+	port = int(input("Port: "))
 	client_socket.connect((host_ip, port))
 	data = b""
 	payload_size = struct.calcsize("Q")
