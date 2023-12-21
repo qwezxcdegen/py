@@ -50,7 +50,7 @@ def main():
 				color = (255, 0, 0)
 				thickness = 2
 
-				cv2.putText(frame, "Face", org, font, fontScale, color, thickness)
+				cv2.putText(frame, f"Face {confidence}", org, font, fontScale, color, thickness)
 			cv2.imshow('received', frame)
 
 		key = cv2.waitKey(1)
