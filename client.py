@@ -3,7 +3,6 @@ from ultralytics import YOLO
 import math
 
 def main():
-
 	model = YOLO("yolov8n-face.pt") #path to model
 
 	client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
